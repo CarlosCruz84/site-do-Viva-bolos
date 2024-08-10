@@ -3,9 +3,9 @@
 :root {
     --font-color: #444444;
     --back-color: #DDCCDD;
-    --alt-color: #FF6F61;
+    --alt-color: #fe5a4c;
     --hover-color: #330033;
-    --span-color: darkgrey;
+    --span-color: #EEEEEE;
     --fonte-principal: "Poppins";
 }
 
@@ -64,12 +64,20 @@ body {
 }
 
 .secao {
-    border: 1px solid black;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     padding: 4rem;
-    gap: 5rem;
+    gap: 4rem;
+}
+
+.secao2 {
+    background-color: var(--span-color);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 4rem;
 }
 
 .secao__coluna {
@@ -80,7 +88,78 @@ body {
     justify-content: space-evenly;
 }
 
+.secao__coluna2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .secao__coluna__foto {
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 1rem;
     box-shadow: 0 0 1rem;
+}
+
+.secao__coluna__titulo {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--alt-color);
+    color: var(--back-color);
+    border-radius: 1rem;
+}
+
+.secao__coluna__servico {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem;
+    list-style: none;
+}
+
+.secao__coluna__servico:hover {
+    background-color: var(--alt-color);
+}
+
+.secao__coluna__foto2 {
+    max-width: 50vw;
+    max-height: 100vh;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+.rodape {
+    background-color: var(--alt-color);
+    color: var(--back-color);
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+
+    .cabecalho__nav__lista,
+    .secao,
+    .secao2 {
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .secao2 {
+        flex-direction: column;
+    }
+
+    .secao,
+    .secao2 {
+        padding: 1rem;
+    }
+
+    .secao__coluna__foto2 {
+        max-width: 100%;
+    }
+
 }
