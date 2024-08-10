@@ -6,67 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viva Bolos da Mari</title>
     <link rel="icon" href="img/logotipo.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<header>
-    <body>
-        <h1> Viva Bolos da Mari </h1>
-        <nav>
-            <ul>
-                <li><a href="#Sobre"> Sobre </a></li>
-                <li><a href="#Serviços"> Serviços</a></li>
-                <li><a href="#contatos">Contatos</a></li>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__nav">
+            <ul class="cabecalho__nav__lista">
+                <li class="cabecalho__nav__lista__item">
+                    <a class="cabecalho__nav__lista__item__link" href="#sobre"> Sobre </a>
+                </li>
+                <li class="cabecalho__nav__lista__item">
+                    <a class="cabecalho__nav__lista__item__link" href="#servicos"> Serviços</a>
+                </li>
+                <li class="cabecalho__nav__lista__item">
+                    <a class="cabecalho__nav__lista__item__link" href="#contatos">Contatos</a>
+                </li>
             </ul>
-
         </nav>
-</header>
-<section id="primeiro">
-    <h2>Bolos Personalizados e Feitos com muito Amor</h2>
-    <p>Transformando suas comemorações em momentos deliciosos!</p>
-    <img src="img/logotipo.jpg" alt="mari segurando o bolo">
-</section>
+        <h1> Viva Bolos da Mari </h1>
+    </header>
 
-<section id="sobre">
-    <h2>Olá eu sou a Mari! Durante a pandemia, eu descobir uma nova paixão: a confeitaria. comecei como uma
-        forma de passar o tempo logo se transformou em uma atividade que eu adorava. Comecei a fazer bolos
-        personalizados, experimentando diferentes receitas e técnicas de decoração. Hoje, sou conhecida por fazer bolos
-        únicos e criativos, e a confeitaria se tornou uma parte essencial de sua vida. Encontrei na confeitaria não
-        apenas um hobby, mas uma verdadeira vocação. 🍰😊.</h2>
-    <p>Com anos de experiência na confeitaria, eu me especializei em criar bolos personalizados para todas as
-        ocasiões. Cada bolo é feito com ingredientes de alta qualidade e muita dedicação.</p>
-    <img src="img/logotipo.jpg" alt="logotipo">
-</section>
-<section id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="servico">
-        <h3>Bolos de Aniversário</h3>
-        <p>Bolos personalizados para tornar sua festa ainda mais especial.</p>
-    </div>
-    <div class="servico">
-        <h3>Casamentos</h3>
-        <p>Bolos elegantes e saborosos para o seu grande dia.</p>
-    </div>
-    <div class="servico">
-        <h3>Temáticos</h3>
-        <p>Bolos com temas exclusivos para qualquer tipo de evento.</p>
-    </div>
-</section>
+    <section class="secao">
+        <div class="secao__coluna">
+            <h2>Bolos Personalizados e Feitos com muito Amor</h2>
+            <p>Transformando suas comemorações em momentos deliciosos!</p>
+        </div>
+        <div class="secao__coluna">
+            <img class="secao__coluna__foto" src="img/logotipo.jpg" alt="mari segurando o bolo">
+        </div>
+    </section>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato para encomendar seu bolo:</p>
-    <ul>
-        <li>Email: <a href="xmcardoso@hotmail.com">xmcardoso@hotmail.com</a></li>
-        <li>Telefone: (71) 99111-5120</li>
-        <li>Endereço: Residencial Elegance - QS 401 CJ D LT 01/02 APTO 808 - Samambaia Norte, Brasília - DF, Cep:
-            72319-520
-        </li>
-    </ul>
-</section>
+    <section class="secao" id="sobre">
+        <div class="secao__coluna">
+            <img class="secao__coluna__foto" src="img/logotipo.jpg" alt="logotipo">
+        </div>
+        <div class="secao__coluna">
+            <h2>Olá eu sou a Mari! Durante a pandemia, eu descobir uma nova paixão: a confeitaria. comecei como uma
+                forma de passar o tempo logo se transformou em uma atividade que eu adorava. Comecei a fazer bolos
+                personalizados, experimentando diferentes receitas e técnicas de decoração. Hoje, sou conhecida por
+                fazer
+                bolos
+                únicos e criativos, e a confeitaria se tornou uma parte essencial de sua vida. Encontrei na confeitaria
+                não
+                apenas um hobby, mas uma verdadeira vocação. 🍰😊.</h2>
+            <p>Com anos de experiência na confeitaria, eu me especializei em criar bolos personalizados para todas as
+                ocasiões. Cada bolo é feito com ingredientes de alta qualidade e muita dedicação.</p>
+        </div>
+    </section>
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servico">
+            <h3>Bolos de Aniversário</h3>
+            <p>Bolos personalizados para tornar sua festa ainda mais especial.</p>
+        </div>
+        <div class="servico">
+            <h3>Casamentos</h3>
+            <p>Bolos elegantes e saborosos para o seu grande dia.</p>
+        </div>
+        <div class="servico">
+            <h3>Temáticos</h3>
+            <p>Bolos com temas exclusivos para qualquer tipo de evento.</p>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Viva Bolos da Mari. Todos os direitos reservados.</p>
-</footer>
+    <section id="contatos">
+        <h2>Contato</h2>
+        <p>Entre em contato para encomendar seu bolo:</p>
+        <ul>
+            <li>Email: <a href="xmcardoso@hotmail.com">xmcardoso@hotmail.com</a></li>
+            <li>Telefone: (71) 99111-5120</li>
+            <li>Endereço: Residencial Elegance - QS 401 CJ D LT 01/02 APTO 808 - Samambaia Norte, Brasília - DF, Cep:
+                72319-520
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Viva Bolos da Mari. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
