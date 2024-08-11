@@ -6,6 +6,7 @@
     --alt-color: #fe5a4c;
     --hover-color: #330033;
     --span-color: #EEEEEE;
+    --special-color: #F7AEBE;
     --fonte-principal: "Poppins";
 }
 
@@ -25,16 +26,26 @@ body {
 }
 
 .cabecalho {
-    background-color: var(--alt-color);
+    background: linear-gradient(360deg, var(--alt-color) 0%, var(--special-color) 100%);
     color: var(--back-color);
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     padding: 0.5rem;
     gap: 0.5rem;
     box-shadow: 0 0 1rem;
 }
 
+.cabecalho__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cabecalho__nav__lista {
+    flex: 1;
+    width: 600px;
+    max-width: 100%;
     display: flex;
     align-items: stretch;
     gap: 0.5rem;
@@ -62,6 +73,10 @@ body {
     color: var(--back-color);
     box-shadow: 0 0 1rem;
 }
+
+/* .cabecalho__titulo {
+    animation: slide 2s ease 0s 1 reverse none running auto;
+} */
 
 .secao {
     display: flex;
@@ -135,9 +150,10 @@ body {
 }
 
 .rodape {
-    background-color: var(--alt-color);
-    color: var(--back-color);
-    padding: 0.5rem;
+    /* background-color: var(--alt-color); */
+    background: linear-gradient(180deg, var(--alt-color) 0%, var(--special-color) 100%);
+    color: var(--font-color);
+    padding: 1rem;
 }
 
 @media screen and (max-width: 800px) {
