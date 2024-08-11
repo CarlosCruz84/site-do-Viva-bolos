@@ -7,11 +7,12 @@
     --hover-color: #330033;
     --span-color: #EEEEEE;
     --special-color: #F7AEBE;
-    --fonte-principal: "Poppins";
+    --gradient: linear-gradient(360deg, var(--alt-color) 0%, var(--special-color) 15%, var(--special-color) 85%, var(--alt-color) 100%);
+    --hover-gradient: linear-gradient(360deg, var(--special-color) 0%, var(--hover-color) 30%, var(--hover-color) 70%, var(--special-color) 100%);
 }
 
 * {
-    font-family: var(--fonte-principal);
+    font-family: "Poppins";
     margin: 0;
     padding: 0;
     text-align: center;
@@ -26,8 +27,7 @@ body {
 }
 
 .cabecalho {
-    background: linear-gradient(360deg, var(--alt-color) 0%, var(--special-color) 100%);
-    color: var(--back-color);
+    background: var(--gradient);
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -69,14 +69,14 @@ body {
 }
 
 .cabecalho__nav__lista__item__link:hover {
-    background-color: var(--hover-color);
+    background: var(--hover-gradient);
     color: var(--back-color);
     box-shadow: 0 0 1rem;
 }
 
-/* .cabecalho__titulo {
-    animation: slide 2s ease 0s 1 reverse none running auto;
-} */
+.cabecalho__titulo {
+    text-align: center;
+}
 
 .secao {
     display: flex;
@@ -112,6 +112,10 @@ body {
     gap: 2rem;
 }
 
+.texto-grande {
+    font-size: 3rem;
+}
+
 .secao__coluna__foto {
     max-width: 100%;
     max-height: 100%;
@@ -124,8 +128,7 @@ body {
     align-items: stretch;
     justify-content: center;
     padding: 1rem;
-    background-color: var(--alt-color);
-    color: var(--back-color);
+    background: var(--gradient);
     border-radius: 1rem;
 }
 
@@ -150,9 +153,7 @@ body {
 }
 
 .rodape {
-    /* background-color: var(--alt-color); */
-    background: linear-gradient(180deg, var(--alt-color) 0%, var(--special-color) 100%);
-    color: var(--font-color);
+    background: var(--gradient);
     padding: 1rem;
 }
 
@@ -162,9 +163,14 @@ body {
     .secao,
     .secao2 {
         max-width: 100%;
+
+    }
+
+    .secao {
         flex-direction: column-reverse;
     }
 
+    .cabecalho__nav__lista,
     .secao2 {
         flex-direction: column;
     }
@@ -172,6 +178,16 @@ body {
     .secao,
     .secao2 {
         padding: 1rem;
+        gap: 1rem;
+    }
+
+    .secao__coluna,
+    .secao__coluna2 {
+        gap: 1rem;
+    }
+
+    .texto-grande {
+        font-size: 2rem;
     }
 
     .secao__coluna__foto2 {
